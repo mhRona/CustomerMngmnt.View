@@ -1,0 +1,21 @@
+<div class="text-center">
+    <h2>Addresses</h2>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Created</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let address of addresses">
+            <td>{{ address.id }}</td>
+            <td>{{ address.city }}</td>
+            <td>{{ address.street }}</td>
+            <td>{{ address.created }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
